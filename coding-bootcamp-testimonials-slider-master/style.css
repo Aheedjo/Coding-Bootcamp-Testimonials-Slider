@@ -5,17 +5,29 @@
 }
 
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-family: Inter;
   font-size: 32px;
   color: #babacf;
 }
 
+button {
+  border: none;
+  padding: 15px 1px;
+  width: 60px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfcfcf;
+}
+
 .main {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 70px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,19 +40,79 @@ body {
   gap: 20px;
 }
 
-.main .quote {
+.main .bg1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main .text-container {
+  z-index: 2;
+  position: relative;
+}
+
+.main .text-container .bg2 {
+  position: absolute;
+  top: -40px;
+  left: 100px;
+}
+
+.main .text-container .quote {
   color: #202046;
   font-weight: 300;
 }
 
-.main .name {
+.main .text-container .name {
   font-size: 0.7em;
   font-weight: 700;
   color: #202046;
 }
 
-.main .proffession {
+.main .text-container .proffession {
   font-size: 0.7em;
   font-weight: 300;
+}
+
+.main .image-container {
+  position: relative;
+  left: -87px;
+  z-index: 1;
+}
+
+.main .image-container .img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.main .image-container .bg3 {
+  z-index: -1;
+  position: absolute;
+  top: -62px;
+  left: -75px;
+}
+
+.main .image-container .control-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+}
+
+.main .image-container .control-btn #prev {
+  border-radius: 30px 0 0 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.main .image-container .control-btn #next {
+  border-radius: 0 30px 30px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 /*# sourceMappingURL=style.css.map */
