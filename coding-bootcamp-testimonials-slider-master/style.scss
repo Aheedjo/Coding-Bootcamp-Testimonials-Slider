@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+$darkBlue: hsl(240,
+38%,
+20%);
+$grayishBlue: hsl(240,
+18%,
+77%);
+$fontSize: 32px;
+$fontFamily: Inter;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $grayishBlue;
+}
+
+.main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .quote {
+        color: $darkBlue;
+        font-weight: 300;
+    }
+    .name {
+        font-size: 0.7em;
+        font-weight: 700;
+        color: $darkBlue;
+    }
+    .proffession {
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+}
